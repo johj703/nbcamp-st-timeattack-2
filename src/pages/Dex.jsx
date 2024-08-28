@@ -1,5 +1,8 @@
 import Dashboard from "../components/Dashboard";
 import PokemonList from "../components/PokemonList";
+import MOCK_DATA from "../data/mock";
+
+const pokemonData = MOCK_DATA;
 
 const Dex = () => {
   return (
@@ -8,7 +11,7 @@ const Dex = () => {
       <h3>선택된 포켓몬들이 나타납니다</h3>
       <Dashboard />
       <hr />
-      <PokemonList />
+      <PokemonList pokemonData={pokemonData} />
     </div>
   );
 };

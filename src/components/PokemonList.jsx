@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import PokemonCard from "./PokemonCard";
 
-const PokemonList = () => {
+const PokemonList = ({ pokemonData }) => {
+  console.log(pokemonData);
   return (
     <div>
       {PokemonList.map((pokemon) => {

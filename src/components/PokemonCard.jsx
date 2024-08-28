@@ -1,8 +1,8 @@
-const PokemonCard = () => {
+const PokemonCard = ({ pokemon }) => {
   return (
     <div>
-      <img src={""} alt={""} />
-      <p>{PokemonCard.korean_name}</p>
+      <img src={"pokemon.img_url"} alt={"포켓몬 이미지"} />
+      <p>{pokemon.korean_name}</p>
       <button>삭제</button>
       <button>추가</button>
     </div>

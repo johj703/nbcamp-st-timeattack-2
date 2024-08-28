@@ -5,10 +5,10 @@ const PokemonList = ({ pokemonData }) => {
   console.log(pokemonData);
   return (
     <div>
-      {PokemonList.map((pokemon) => {
+      {pokemonData.map((pokemon) => {
         <PokemonCard
           key={pokemon.id}
-          pokemon={{}}
+          pokemon={pokemon}
           onAdd={() => {}}
           isSelected={false}
         />;
